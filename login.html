@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p{
+            text-indent: 80em;
+        }
+    </style>
+    <head>
+    
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <p><button id="BExit" type="submit" class="btn btn-primary btn-large"> Exit</button></p>
+        <button id="Bgoogle" type="submit" class="btn btn-primary btn-large">need Google?</button><br><br><br>
+        <button id="Bcpp" type="submit" class="btn btn-primary btn-large"> use c++</button>
+        <div class="login">
+            <h1>Login</h1>
+            <form method="post">
+                <input id="username" type="text" name="u" placeholder="Username" required="required" />
+                <input id="password" type="password" name="p" placeholder="Password" required="required" />
+                <button id="Blogin" type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+            </form>
+        </div>
+       
+        <script src="./login.js" ></script>
+    </body>
+</html>

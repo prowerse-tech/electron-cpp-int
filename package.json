@@ -1,0 +1,29 @@
+{
+  "name": "electronplay",
+  "version": "1.0.0",
+  "description": "Electron POC",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec 'electron .'",
+    "reset": "git reset --hard"
+  },
+  "repository": "https://github.com/zalaps/electronplay.git",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "hardik",
+  "devDependencies": {
+    "electron": "^5.0.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "electron-alert": "^0.1.5",
+    "mysql": "^2.18.1",
+    "nan": "^2.14.0",
+    "net": "^1.0.2",
+    "promise": "^8.1.0"
+  }
+}

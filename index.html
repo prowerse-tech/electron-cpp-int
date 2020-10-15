@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <button id = "Bexit">Exit</button>
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.<br><br><br>
+
+    <div class="wrap-input100 validate-input" data-validate = "Enter username">
+      <input class="input100" type="text" name="username" placeholder="User name">
+      </div>
+
+      <div class="wrap-input100 validate-input" data-validate="Enter password">
+        <input class="input100" type="password" name="pass" placeholder="Password">
+        </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    
+  </body>
+</html>
